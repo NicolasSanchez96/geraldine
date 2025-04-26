@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    background-color: rgb(248, 235, 245); /* Fondo de la página */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+/* Ajustes para el header */
+header {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px; /* Espaciado dentro del header */
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-top: 41px;
+}
+
+header .titulo {
+    font-size: 26px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgb(85, 15, 151);
+    font-weight: bold;
+    margin-bottom: 180px; /* Espacio debajo del título */
+    margin-left: 19px;
+}
+
+/* Estilos del menú y los apartados */
+.menu .apartados ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu .apartados ul li {
+    margin-bottom: 20px; /* Espacio entre los apartados */
+}
+
+.menu .apartados ul li a {
+    text-decoration: none;
+    color: rgb(145, 88, 199);
+    font-size: 15px;
+    font-weight: bold;
+    display: block; /* Hace que el enlace ocupe todo el espacio del li */
+}
+
+/* Ajustes del footer */
+footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(133, 24, 133); /* Color del texto */
+    text-align: left; /* Alineado a la izquierda */
+    padding: 8px 15px; /* Espaciado interno */
+    position: absolute; /* Lo ubicamos con un posicionamiento absoluto */
+    left: 0; /* Alineado al lado izquierdo */
+    bottom: 20px; /* Lo ponemos un poco más arriba para no estar pegado al borde */
+    width: 180px; /* Alineado con el menú */
+    background-color: rgb(248, 235, 245); /* Fondo del pie de página */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    margin-left: 19px;
+}
+
+footer .derechos {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    color: rgb(133, 24, 133);/* Cambia el color de texto de .derechos */
+}
+
+footer .Registrada {
+    font-size: 9px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133); /* Cambia el color de texto de .Registrada */
+}
+
+footer .redes {
+    margin-top: 35px;
+    display: flex;         /* Usamos flexbox para poder alinear los elementos */
+    flex-direction: column; /* Colocamos los elementos en columna (el texto y el logo de Instagram) */
+    align-items: center;   /* Centramos el contenido en el eje horizontal */
+    text-align: center;    /* Asegura que el texto también esté centrado */
+    font-size: 19px;       /* Ajusta el tamaño del texto */
+}
+
+footer .redes a {
+    display: inline-block; /* Asegura que el logo de Instagram esté en línea con el texto */
+    margin-top: 5px;       /* Espacio entre el texto y el logo */
+}
+
+footer .logo-instagram {
+    width: 40px;   /* Ajusta el tamaño del logo */
+    height: 25px;  /* Mantiene la proporción */
+}

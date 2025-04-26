@@ -1,0 +1,45 @@
+.galeria {
+    display: flex; /* Usamos Flexbox para organizar los artículos */
+    justify-content: center; /* Centra el artículo dentro de la galería */
+    margin-left: 0px; /* Ajusta la posición de los artículos a la derecha */
+    position: relative; /* Para mover los artículos hacia arriba */
+    top: -215px; /* Mueve los artículos hacia arriba, ajusta según sea necesario */
+    padding-top: 10px; /* Añade un pequeño espacio superior para ajustar la posición */
+}
+
+
+/* Ajustes para los artículos */
+.album {
+    width: 100%; /* Los artículos ocuparán todo el espacio disponible dentro del contenedor */
+    max-width: 300px; /* Limita el tamaño máximo de cada artículo */
+    text-align: left;
+    position: relative; /* Para manejar la posición de los elementos dentro */
+}
+
+/* Estilos de la imagen dentro del artículo */
+.album img {
+    width: 90%; /* Hace que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Ajusta la altura de la imagen de manera proporcional */
+    max-width: 550px; /* Limita el ancho máximo de la imagen (ajusta según lo que necesites) */
+    max-height: 450px; /* Limita la altura máxima de la imagen (ajusta según lo que necesites) */
+    object-fit: cover; /* Hace que la imagen se recorte de manera uniforme para llenar el área */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.album:hover img {
+    transform: scale(1.05); /* La imagen se agranda un 5% */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para el título de la portada */
+.album .titulo-portada {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold;
+    color: rgb(85, 15, 151); /* Color del texto */
+    margin-top: 15px; /* Espacio entre la imagen y el título */
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Transformación a mayúsculas */
+}
